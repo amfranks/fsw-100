@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+html, body {
+    min-width: 360px;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px auto 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    grid-column: 1 / 5;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-top: 25%;
+    color: white;
+    transition: all 0.1s;
+}
+
+header h1:hover {
+    color: whitesmoke;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(./images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+nav {
+    top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+nav a {
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+main {
+    height: auto;
+    color: rgb(66, 66, 66);
+    grid-column: 1 / 5;
+}
+
+#aboutMain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contactMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#contactMain p {
+    padding: 25px;
+}
+
+#pie {
+    height: 555px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#pie:hover {
+    height: 726px;
+}
+
+article {
+    margin: 50px;
+    font-size: clamp(1rem, 7vw - 1rem, 1.5rem);
+    width: 500px;
+}
+
+#content1 {
+    text-align: center;
+}
+
+#pizza {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    font-size: x-small;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border: black solid 1px;  
+    border-radius: 3px;  
+}
+
+table th {
+    color: black;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table td {
+    padding-top: 5px;
+}
+
+h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    opacity: 0.5;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 5;
+}
+
+footer p {
+    font-size: .7rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a {
+    font-size: .7rem;
+    padding: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width : 360px) {
+    body {
+        width: auto;
+    }
+
+    table {
+        width: 80%;
+        font-size: x-small;
+    }
+ }
+
+@media only screen and (min-width : 440px) {
+    body {
+        width: auto;
+    }
+
+    table {
+        width: 80%;
+        font-size: 0.5rem;
+    }
+ }
+
+@media only screen and (min-width : 465px) {
+    body {
+        width: auto;
+    }
+
+    table {
+        font-size: 0.5rem;
+        width: 80%;
+    }
+ }
+
+@media only screen and (min-width : 512px) {
+    body {
+        width: auto;
+    }
+
+    table {
+        font-size: 0.6rem;
+        width: 60%;
+    }
+ }
+
+@media only screen and (min-width : 800px) {
+   body {
+       width: auto;
+   }
+
+   header h1 {
+       padding: 10%;
+       font-size: 2.5rem;
+   }
+
+   nav a {
+       font-size: 1.5rem;
+   }
+
+   table {
+       font-size: 1rem;
+       width: 70%;
+   }
+}
+
+@media only screen and (min-width : 1400px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding-top: 5%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer a {
+        font-size: medium;
+    }
+
+    footer p {
+        font-size: medium;
+    }
+
+    ul {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    h2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    #pie {
+        height: 300px;
+    }
+
+    article {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width : 756px) {
+    #aboutMain {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 560px) {
+    article {
+        margin: 50px;
+        width: 250px;
+    }
+
+    #pie {
+        margin: 50px;
+    }
+}
+
+@media only screen and (max-width : 806px) {
+    #contactMain {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width : 540px) {
+    #contactMain {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width : 422px) {
+    #contactMain {
+        font-size: 1rem;
+    }
+}

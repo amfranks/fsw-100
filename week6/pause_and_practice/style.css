@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 10px;
+}
+
+#box1:hover {
+    height: 50px;
+    width: 50px;
+}
+
+#box2:hover {
+    background-color: white;
+    border: 1px dotted black;
+}
+
+#box3:hover {
+    border-radius: 5px;
+    margin: 170px;
+}
+
+#box4:hover {
+    background-color: pink;
+    box-shadow: 5px 5px 5px;
+    border-radius: 50%;
+}
+
+#box5:hover {
+    position: absolute;
+    top: 450px;
+    opacity: .5;
+}
+
+#box6:hover {
+    height: 300px;
+    width: 500px;
+    border: 4px solid yellow;
+}

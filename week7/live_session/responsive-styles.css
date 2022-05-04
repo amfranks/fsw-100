@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;    
+    box-sizing: border-box;
+
+}
+
+.spacer {
+    height: 300px;
+}
+
+.ems, .rems {
+    margin: 2.5rem;
+}
+
+.ems li {
+    font-size: 1.3em;
+}
+  
+.rems li {
+    font-size: 1.3rem;
+}
+
+.responsiveText, .fluidText {
+    width: 100%;
+    text-align: center;
+    padding: 1.875rem;
+
+}
+
+.fluidText {
+    font-size: clamp(1rem, 7vw - 1rem, 1.5rem);
+    
+}
+
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .responsiveText { font-size: 1.0625rem; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .responsiveText { font-size: 1.125rem; }
+}
+
+@media (min-width: 1280px) {
+    .responsiveText { font-size: 1.5rem; }
+}
+    
+
